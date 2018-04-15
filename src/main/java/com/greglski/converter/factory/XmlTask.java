@@ -1,5 +1,5 @@
 package com.greglski.converter.factory;
 
 public interface XmlTask {
-    public void createTag(String[] line);
+    void createTag(String[] line);
 }

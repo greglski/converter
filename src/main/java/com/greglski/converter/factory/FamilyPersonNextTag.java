@@ -3,7 +3,7 @@ package com.greglski.converter.factory;
 import javax.xml.stream.XMLStreamWriter;
 
 public class FamilyPersonNextTag implements XmlTask {
-    XMLStreamWriter xsw;
+    private XMLStreamWriter xsw;
 
     public FamilyPersonNextTag(XMLStreamWriter xsw) {
         this.xsw = xsw;

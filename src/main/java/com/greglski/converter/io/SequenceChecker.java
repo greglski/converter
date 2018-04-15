@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SequenceChecker {
-    List<String> checkList;
+    private List<String> checkList;
 
     public SequenceChecker() {
         this.checkList = new LinkedList<>();

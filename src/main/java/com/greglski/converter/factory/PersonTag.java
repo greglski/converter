@@ -3,9 +3,7 @@ package com.greglski.converter.factory;
 import javax.xml.stream.XMLStreamWriter;
 
 public class PersonTag implements XmlTask {
-    /*String firstname;
-    String lastname;*/
-    XMLStreamWriter xsw;
+    private XMLStreamWriter xsw;
 
     public PersonTag(XMLStreamWriter xsw) {
         this.xsw = xsw;
@@ -13,9 +11,6 @@ public class PersonTag implements XmlTask {
 
     @Override
     public void createTag(String[] line) {
-        /*this.firstname = line[1];
-        this.lastname = line[2];*/
-
         try {
             xsw.writeStartElement("person");
             xsw.writeStartElement("firstname");
@@ -29,6 +24,5 @@ public class PersonTag implements XmlTask {
         } catch (Exception e) {
             System.out.println("Unable to create person tag\n" + e);
         }
-
     }
 }

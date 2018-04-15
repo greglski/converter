@@ -3,7 +3,7 @@ package com.greglski.converter.factory;
 import javax.xml.stream.XMLStreamWriter;
 
 public class AddressTag implements XmlTask {
-    XMLStreamWriter xsw;
+    private XMLStreamWriter xsw;
 
     public AddressTag(XMLStreamWriter xsw) {
         this.xsw = xsw;
@@ -24,10 +24,12 @@ public class AddressTag implements XmlTask {
             xsw.writeEndElement();
             xsw.writeCharacters("\n");
 
-            xsw.writeStartElement("post");
-            xsw.writeCharacters(line[3]);
-            xsw.writeEndElement();
-            xsw.writeCharacters("\n");
+            if (line.length > 3) {
+                xsw.writeStartElement("post");
+                xsw.writeCharacters(line[3]);
+                xsw.writeEndElement();
+                xsw.writeCharacters("\n");
+            }
 
             xsw.writeEndElement();
             xsw.writeCharacters("\n");

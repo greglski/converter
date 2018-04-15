@@ -3,7 +3,7 @@ package com.greglski.converter.factory;
 import javax.xml.stream.XMLStreamWriter;
 
 public class TphoneTag implements XmlTask {
-    XMLStreamWriter xsw;
+    private XMLStreamWriter xsw;
 
     public TphoneTag(XMLStreamWriter xsw) {
         this.xsw = xsw;
@@ -26,6 +26,7 @@ public class TphoneTag implements XmlTask {
 
             xsw.writeEndElement();
             xsw.writeCharacters("\n");
+
         } catch (Exception e) {
             System.out.println("Unable to create phone tag\n" + e);
         }

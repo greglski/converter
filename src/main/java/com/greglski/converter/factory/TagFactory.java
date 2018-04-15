@@ -4,14 +4,13 @@ import javax.xml.stream.XMLStreamWriter;
 
 public final class TagFactory {
 
-
-    public static final String PERSON = "P";
-    public static final String PERSON_NEXT = "PP";
-    public static final String FAMILY_PERSON_NEXT = "FPP";
-    public static final String FAMILY = "F";
-    public static final String FAMILY_NEXT = "FF";
-    public static final String ADDRESS = "A";
-    public static final String TPHONE = "T";
+    private static final String PERSON = "P";
+    private static final String PERSON_NEXT = "PP";
+    private static final String FAMILY_PERSON_NEXT = "FPP";
+    private static final String FAMILY = "F";
+    private static final String FAMILY_NEXT = "FF";
+    private static final String ADDRESS = "A";
+    private static final String TPHONE = "T";
 
     public final XmlTask makeTag(String factorySwitch, XMLStreamWriter xmlStreamWriter) {
         switch (factorySwitch) {
@@ -34,18 +33,3 @@ public final class TagFactory {
         }
     }
 }
-
-
-
-    /* xmlStreamWriter.writeStartElement("person");
-        xmlStreamWriter.writeStartElement("firstname");
-        xmlStreamWriter.writeCharacters("John");
-        xmlStreamWriter.writeEndElement();
-        xmlStreamWriter.writeCharacters("\n");
-        xmlStreamWriter.writeStartElement("lastname");
-        xmlStreamWriter.writeCharacters("Doe");
-        xmlStreamWriter.writeEndElement();
-        xmlStreamWriter.writeCharacters("\n");
-        xmlStreamWriter.writeEndElement();
-        xmlStreamWriter.writeCharacters("\n");*/
-
