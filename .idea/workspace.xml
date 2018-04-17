@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="909d0501-9e48-4b6c-b1b7-ff3b0247d712" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/greglski/converter/io/SequenceCheckerTestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/greglski/converter/io/SequenceCheckerTestSuite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/FamilyNextTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/FamilyNextTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/FamilyPersonNextTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/FamilyPersonNextTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/FamilyTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/FamilyTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/PersonNextTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/PersonNextTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/PersonTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/PersonTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/greglski/converter/io/SequenceCheckerTestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/greglski/converter/io/SequenceCheckerTestSuite.java" afterDir="false" />
-    </list>
+    <list default="true" id="909d0501-9e48-4b6c-b1b7-ff3b0247d712" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,7 +34,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/PersonNextTag.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
-                  <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
                   <folding>
                     <element signature="e#177#178#0" expanded="true" />
                     <element signature="e#203#204#0" expanded="true" />
@@ -100,20 +91,29 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/PersonTag.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
-                  <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+                  <caret line="25" selection-start-line="25" selection-end-line="25" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FamilyPersonNextTag.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="FamilyPersonNextTag.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/FamilyPersonNextTag.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="492">
-                  <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+                <state relative-caret-position="225">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
                   <folding>
                     <element signature="e#193#194#0" expanded="true" />
                     <element signature="e#219#220#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AddressTag.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/AddressTag.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -769,7 +769,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -779,9 +778,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22764228" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22764228" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25338754" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.50542" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18573265" />
@@ -1007,17 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/AddressTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/TagFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1089,14 +1077,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/PersonTag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/PersonNextTag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#177#178#0" expanded="true" />
             <element signature="e#203#204#0" expanded="true" />
@@ -1106,12 +1094,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/FamilyPersonNextTag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#193#194#0" expanded="true" />
             <element signature="e#219#220#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/greglski/converter/factory/AddressTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
         </state>
       </provider>
     </entry>
