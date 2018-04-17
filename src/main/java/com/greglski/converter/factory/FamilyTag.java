@@ -3,7 +3,7 @@ package com.greglski.converter.factory;
 import javax.xml.stream.XMLStreamWriter;
 
 public class FamilyTag implements XmlTask {
-    private XMLStreamWriter xsw;
+    protected XMLStreamWriter xsw;
 
     public FamilyTag(XMLStreamWriter xsw) {
         this.xsw = xsw;
@@ -25,7 +25,7 @@ public class FamilyTag implements XmlTask {
             xsw.writeCharacters("\n");
 
         } catch (Exception e) {
-            System.out.println("Unable to create phone tag\n" + e);
+            System.out.println("Unable to create family tag\n" + e);
         }
     }
 

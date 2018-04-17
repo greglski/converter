@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.greglski.converter.io.SequenceCheckerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-04-15T15:26:22" hostname="T520-Lenovo" time="0.015">
+<testsuite name="com.greglski.converter.io.SequenceCheckerTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-04-17T22:23:53" hostname="T520-Lenovo" time="0.031">
   <properties/>
-  <testcase name="testCheckSequence" classname="com.greglski.converter.io.SequenceCheckerTestSuite" time="0.015"/>
+  <testcase name="testCheckSequencePP" classname="com.greglski.converter.io.SequenceCheckerTestSuite" time="0.031"/>
+  <testcase name="testCheckSequenceFPP" classname="com.greglski.converter.io.SequenceCheckerTestSuite" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

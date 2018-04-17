@@ -2,11 +2,10 @@ package com.greglski.converter.factory;
 
 import javax.xml.stream.XMLStreamWriter;
 
-public class FamilyNextTag implements XmlTask {
-    private XMLStreamWriter xsw;
+public class FamilyNextTag extends FamilyTag {
 
     public FamilyNextTag(XMLStreamWriter xsw) {
-        this.xsw = xsw;
+        super(xsw);
     }
 
     @Override
@@ -14,21 +13,10 @@ public class FamilyNextTag implements XmlTask {
         try {
             xsw.writeEndElement();
             xsw.writeCharacters("\n");
-
-            xsw.writeStartElement("family");
-
-            xsw.writeStartElement("name");
-            xsw.writeCharacters(line[1]);
-            xsw.writeEndElement();
-            xsw.writeCharacters("\n");
-
-            xsw.writeStartElement("born");
-            xsw.writeCharacters(line[2]);
-            xsw.writeEndElement();
-            xsw.writeCharacters("\n");
-
         } catch (Exception e) {
-            System.out.println("Unable to create phone tag\n" + e);
+            System.out.println("Unable to create familyNext tag\n" + e);
         }
+
+        super.createTag(line);
     }
 }

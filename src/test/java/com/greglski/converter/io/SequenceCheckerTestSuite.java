@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class SequenceCheckerTestSuite {
     @Test
-    public void testCheckSequence() {
+    public void testCheckSequenceFPP() {
         //Given
         SequenceChecker sequenceChecker = new SequenceChecker();
         sequenceChecker.getCheckList().add("P");
@@ -18,5 +18,21 @@ public class SequenceCheckerTestSuite {
 
         //Then
         Assert.assertEquals("FPP", sequence);
+        Assert.assertEquals(1, sequenceChecker.getCheckList().size());
+    }
+
+    @Test
+    public void testCheckSequencePP() {
+        //Given
+        SequenceChecker sequenceChecker = new SequenceChecker();
+        sequenceChecker.getCheckList().add("P");
+
+        //When
+        String sequence = sequenceChecker.checkSequence("P");
+
+        //Then
+        Assert.assertEquals("PP", sequence);
+        Assert.assertEquals(1, sequenceChecker.getCheckList().size());
+
     }
 }
