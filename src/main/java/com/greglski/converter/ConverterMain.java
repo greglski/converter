@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.stream.Stream;
 
 public class ConverterMain {
     public static void main(String[] args) throws Exception {
@@ -25,7 +26,17 @@ public class ConverterMain {
         xmlStreamWriter.writeCharacters("\n");
         xmlStreamWriter.writeStartElement("people");
 
-        try {
+        try (Stream<String> stream = Files.lines(path)){
+            stream.map(line -> line.split("\\|"))
+                    .forEach(line -> {
+                        XmlTask xmlTask = tagFactory.makeTag(sequenceChecker.checkSequence(line[0]), xmlStreamWriter);
+                        xmlTask.createTag(line);
+            });
+        } catch (IOException e) {
+            System.out.println("No such a file\n" + e );
+        }
+
+        /*try {
             Files.lines(path)
                     .map(line -> line.split("\\|"))
                     .forEach(line -> {
@@ -34,7 +45,7 @@ public class ConverterMain {
                     });
         } catch (IOException e) {
             System.out.println("No such a file\n" + e );
-        }
+        }*/
 
         xmlStreamWriter.writeEndElement();
         xmlStreamWriter.writeEndDocument();
